@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content">
+			<span class="card-title">Gerenciador de Despesas Variáveis</span>
+		</div>
+        <div class="card-content">
+         <table>
+			 <thead>
+				 <tr>
+					 <th>Favorecido</th>
+					 <th>Data da Despesa</th>
+					 <th>Valor da Despesa</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+				 <tr *ngFor="let despesaResultado of despesaList">
+					 <td>{{ despesaResultado.codigo }}</td>
+					 <td>{{ despesaResultado.dataPagamento }}</td>
+					 <td>{{ despesaResultado.valorFinal }}</td>
+				 </tr>
+			 </tbody>
+		 </table>
+        </div>
+      </div>
+    </div>
+  </div>

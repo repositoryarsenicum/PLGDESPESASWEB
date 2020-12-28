@@ -50,9 +50,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/materialize-css/dist/css/materialize.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -145,6 +148,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PLGDESPESASWEB"
+    }
+  },
+  "defaultProject": "PLGDESPESASWEB",
+  "cli": {
+    "analytics": "9912a01c-a754-4b34-8eac-20dc2de62acf"
+  }
 }
