@@ -29,4 +29,8 @@ export class DespesaComponent implements OnInit {
     }
   }
 
+  public getDespesaList() {
+    return this.despesaList;
+  }
+
 }

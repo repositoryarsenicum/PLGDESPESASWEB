@@ -14,7 +14,7 @@
 				 </tr>
 			 </thead>
 			 <tbody>
-				 <tr *ngFor="let despesaResultado of despesaList">
+				 <tr *ngFor="let despesaResultado of getDespesaList()">
 					 <td>{{ despesaResultado.codigo }}</td>
 					 <td>{{ despesaResultado.dataPagamento }}</td>
 					 <td>{{ despesaResultado.valorFinal }}</td>
