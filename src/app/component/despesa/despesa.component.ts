@@ -18,7 +18,6 @@ export class DespesaComponent implements OnInit {
   ngOnInit(): void {
     this.subscribeResult = this.despesaService.getDespesaList().subscribe( produtoResultadoList => {
       this.despesaList = produtoResultadoList;
-      console.log(this.despesaList);
     });
     this.despesaService.prepararConsultaBaseDados().subscribe();
   }

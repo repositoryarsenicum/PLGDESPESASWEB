@@ -5,11 +5,11 @@ import { DespesaComponent } from './component/despesa/despesa.component';
 const routes: Routes = [
   // {
   //   path: "",
-  //   redirectTo: "gerenciador-despesa",
+  //   redirectTo: "despesa",
   //   pathMatch: "full"
   // },
   {
-    path: "gerenciador-despesa",
+    path: "despesa",
     loadChildren : "./component/despesa/despesa.module#DespesaModule"
   }
 ];
