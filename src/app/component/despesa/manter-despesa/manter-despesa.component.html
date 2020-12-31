@@ -1,12 +1,54 @@
 <div class="row">
-    <div class="col s12 m12">
-      <div class="card">
-        <div class="card-content">
-			<span class="card-title">Cadastrar Despesas</span>
-		</div>
-        <div class="card-content">
-         
+  <div class="col s12 m12">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{{ isEditarCampo ? "Editar Despesa Variável" : "Cadastrar Despesas Variável"}}</span>
+      </div>
+      <div class="card-content">
+        <div class="row">
+          <form [formGroup]="despesaFormulario" class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input type="text" id="favorecido" formControlName="favorecido">
+                <label for="favorecido">Favorecido</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="dataPagamento" type="text" formControlName="dataPagamento">
+                <label for="dataPagamento">Data da Aquisição</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="valorDespesa" type="text" formControlName="valorDespesa">
+                <label for="valorDespesa">Valor da Despesa</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" id="formaPagamento" formControlName="formaPagamento">
+                <label for="formaPagamento">Forma de Pagamento</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="canalPagamento" type="text" formControlName="canalPagamento">
+                <label for="canalPagamento">Canal de Pagamento</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="observacao" type="materialize-textarea" formControlName="observacao"></textarea>
+                <label for="observacao">Observação</label>
+              </div>
+            </div>
+          </form>
+          <div>
+            <div class="input-field col s8">
+              <button routerLink="/cadastrar-despesa" class="btn blue darken-4 waves-effect col s12">
+                {{ isEditarCampo ? "Editar" : "Cadastrar"}} Despesa Variável</button>
+            </div>
+            <div class="input-field col s4">
+              <button routerLink="/despesa" class="btn red accent-4 waves-effect col s12">Cancelar</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

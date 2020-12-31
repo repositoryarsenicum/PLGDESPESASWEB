@@ -30,4 +30,14 @@ export class DespesaService {
       }));
   }
 
+  // Responsavel por recuperar uma determinada despesa pelo codigo identificador
+  public findOne(codigo: number): Observable<DespesaModel> {
+    return this.httpClient.get<DespesaModel>(this.PLGDESPESASAPI.concat("despesa").concat(`${codigo}`)).pipe(
+      tap(despesaResultado => {
+        console.log(this.PLGDESPESASAPI.concat("despesa").concat(`${codigo}`));
+        console.log("Dados recuperados com sucesso!");
+        console.log(despesaResultado);
+      }));
+  }
+
 }

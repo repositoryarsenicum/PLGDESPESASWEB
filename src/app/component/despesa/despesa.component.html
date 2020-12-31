@@ -11,6 +11,7 @@
 					 <th>Favorecido</th>
 					 <th>Data da Despesa</th>
 					 <th>Valor da Despesa</th>
+					 <th>Ações</th>
 				 </tr>
 			 </thead>
 			 <tbody>
@@ -18,6 +19,11 @@
 					 <td>{{ despesaResultado.codigo }}</td>
 					 <td>{{ despesaResultado.dataPagamento }}</td>
 					 <td>{{ despesaResultado.valorFinal }}</td>
+					 <td>
+						<a [routerLink]="['/despesa/', despesaResultado.codigo]" class="btn waves-effect deep-purple accent-1">
+							<span class="material-icons">create</span>
+						</a>
+					 </td>
 				 </tr>
 			 </tbody>
 		 </table>

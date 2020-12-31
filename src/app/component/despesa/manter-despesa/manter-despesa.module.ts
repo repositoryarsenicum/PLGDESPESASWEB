@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { DespesaModel } from '../despesa.model';
 import { ManterDespesaComponent } from './manter-despesa.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   declarations: [ManterDespesaComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    DespesaModel
   ]
 })
 export class ManterDespesaModule { }

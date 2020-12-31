@@ -1,6 +1,9 @@
 export class DespesaModel {
 	codigo: number;
+	favorecido: string;
 	dataPagamento: string;
-	tipoDespesa: string;
-	valorFinal: number;
+	valorDespesa: number;
+	formaPagamento: string;
+	canalPagamento: string;
+	observacao: string;
 }
